@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<link rel="shortcut icon" href="static/img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="static/css/style.css">
+<title>{{ query }} - Search</title>
+<style>
+form {
+all: initial;
+}
+form input {
+width: 90%;
+margin: 10px;
+margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+<center>
+<form action="/" method="POST">
+<input name="query" type="text" placeholder="search for anything" value="{{ query }}">
+</form>
+</center>
+<div class="wrapper">
+{% for item in data %}
+<div><a href="{{ item.uri }}" target="_blank" rel="noopener noreferrer"><span class="large bold">{{ item.name }}</span></a><hr><span class="thin"><span class="large">{{ item.price }}</span>, {{ item.bids }}</span></div>
+{% endfor %}
+</div>
+</body>
+</html>

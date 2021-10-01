@@ -1,0 +1,66 @@
+* {
+font-family: "Nunito", sans-serif;
+}
+a {
+text-decoration: none;
+}
+form {
+position: fixed;
+height: 200px;
+width: 500px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+form input {
+width: 100%;
+margin: auto;
+text-align: center;
+font-size: xx-large;
+}
+form input:focus {
+outline: none;
+}
+hr {
+border: none;
+height: 1px;
+background-color: #585858;
+margin: 1em 0;
+img {
+top: -40px;
+}
+}
+.bold {
+font-family: "Roboto Condensed", sans-serif;
+color: #282828;
+}
+.large {
+font-size: large;
+}
+.thin {
+color: #585858;
+}
+.wrapper {
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+gap: 10px;
+}
+@media screen and (min-width: 520px) and (-webkit-max-device-pixel-ratio: 1) {
+.wrapper {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+@media screen and (min-width: 800px) and (-webkit-max-device-pixel-ratio: 1) {
+.wrapper {
+grid-template-columns: repeat(3, 1fr);
+}
+}
+@media screen and (min-width: 1000px) and (-webkit-max-device-pixel-ratio: 1) {
+.wrapper {
+grid-template-columns: repeat(5, 1fr);
+}
+}
+.wrapper div {
+border: 1px solid lightgray;
+padding: 10px;
+}
