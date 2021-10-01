@@ -1,5 +1,3 @@
-<img src="static/img/results.png" height="500">
-
 # Getting Started
 
 ## Installation
