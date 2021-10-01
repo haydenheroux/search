@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-from lib.request import get
+from external.request import get
 from Information import Information
 
 
