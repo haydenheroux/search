@@ -1,3 +1,5 @@
+<img src="static/img/results.png" height="500">
+
 # Getting Started
 
 ## Installation
@@ -27,6 +29,8 @@ python -m flask run
 ```
 
 Open `localhost` or `127.0.0.1` in any web browser for the web interface.
+
+<img src="static/img/search.png" height="500">
 
 ### Elevation
 
